@@ -1,0 +1,133 @@
+// Defaults
+    $base-color: #8197BC;
+    $active-color: darken($base-color, 10%);
+    $base-gradient: 'matte';
+    $font-family: 'CandyScript';
+    
+// Typography
+    // Defining our festive embedded fontface
+    @font-face {
+        font-family: 'CandyScript';
+        src: url('resources/fonts/CandyScript/candy_script-webfont.eot');
+        src: url('resources/fonts/CandyScript/candy_script-webfont.eot?#iefix') format('embedded-opentype'),
+             url('resources/fonts/CandyScript/candy_script-webfont.woff') format('woff'),
+             url('resources/fonts/CandyScript/candy_script-webfont.ttf') format('truetype'),
+             url('resources/fonts/CandyScript/candy_script-webfont.svg#candy_scriptregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+// Lists
+    $list-color: darken($active-color, 20%);
+    $list-active-color: transparentize($active-color, .2);
+    $list-active-gradient: 'recessed';
+    $list-header-bg-color: darken($list-active-color, 10%);
+    $list-pressed-color: lighten($list-active-color, 10%);
+    $basic-slider: true;
+
+// Tabs
+    // This sets the tab selection to transparent
+    $tabs-dark: transparentize($active-color, 1.0);
+
+    // This sets the color for the "bottom" tab icons and gradient
+    $tabs-bottom-active-gradient: color-stops(#42567D, #42567D);
+    $tabs-bar-gradient: color-stops(#f2f2f2, $base-color);
+    
+
+// Buttons
+    $confirm-color: #799D54;
+    $alert-color: #B0886D;
+
+// Toolbars
+
+	$toolbar-gradient: color-stops(#f2f2f2, $base-color);
+	
+
+@import 'sencha-touch/default/all';
+
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-list-paging;
+@include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+@include sencha-draw;
+@include sencha-charts;
+
+
+
+.x-layout-card-item {
+    background: url('../images/background.png') top left repeat;
+    background-size: cover;
+}
+
+.tweet-wrapper {
+  h2 { font-weight: bold; padding-bottom: 3px; }
+  img { border-radius: 5px; float: left; }
+  .tweet {
+    font-size: 70%;
+    margin-left: 60px;
+    min-height: 50px;
+  }
+  .posted { float: right; }
+}
+
+@include pictos-iconmask('list');
+@include pictos-iconmask('time_repeat');
+@include pictos-iconmask('twitter2');
+
+
+
+
+
+// Theme Overrides - BUTTONS
+.x-button {
+	&.x-button-action {
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #f2f2f2), color-stop(100%, $active-color));
+		border: 2px solid $active-color;
+		.x-button-label {color: $active-color; }
+	}
+	&.x-button-confirm {
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #f2f2f2), color-stop(100%, $confirm-color));
+		border: 2px solid $confirm-color;
+		.x-button-label {color: $confirm-color; }
+	}
+	&.x-button-decline {
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #f2f2f2), color-stop(100%, $alert-color));
+		border: 2px solid $alert-color;
+		.x-button-label {color: $alert-color; }
+	}
+	.x-button-label {
+		color: #1073B9;
+		@include bevel-text('highlight');
+	}
+}
+
+
+.x-toolbar-dark .x-button .x-button-icon.x-icon-mask, .x-toolbar .x-toolbar-dark .x-button .x-button-icon.x-icon-mask, .x-toolbar-dark .x-field-select .x-component-outer .x-button-icon.x-icon-mask, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer .x-button-icon.x-icon-mask, .x-toolbar-dark .x-field-select .x-component-outer::before .x-button-icon.x-icon-mask, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer::before .x-button-icon.x-icon-mask {
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #42567D), color-stop(100%, #42567D));
+}
+
+.x-toolbar-dark.x-docked-top {
+	background-image: url('../images/snowflake.png') top left repeat-x !important;
+
+}
+
+.x-toolbar {
+	
+	.x-innerhtml {
+		color: #42567D !important;
+		@include bevel-text('highlight');
+		text-transform: capitalize;
+	}
+}
