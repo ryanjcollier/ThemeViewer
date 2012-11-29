@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'CandyScript';
-  src: url("resources/fonts/CandyScript/candy_script-webfont.eot");
-  src: url("resources/fonts/CandyScript/candy_script-webfont.eot?#iefix") format("embedded-opentype"), url("resources/fonts/CandyScript/candy_script-webfont.woff") format("woff"), url("resources/fonts/CandyScript/candy_script-webfont.ttf") format("truetype"), url("resources/fonts/CandyScript/candy_script-webfont.svg#candy_scriptregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* line 3, ../../touch/resources/themes/stylesheets/sencha-touch/default/core/_reset.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3,
 h4, h5, h6, pre, code, form, fieldset, legend,
@@ -440,7 +432,7 @@ input, textarea, select {
  */
 /* line 10, ../../touch/resources/themes/stylesheets/sencha-touch/default/core/_core.scss */
 html, body {
-  font-family: "CandyScript";
+  font-family: "Puritan";
   font-weight: normal;
   position: relative;
   -webkit-text-size-adjust: none;
@@ -11284,29 +11276,39 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAFI0lEQVRoBe2ZSYgdVRSG+yUmnagRQYU4NbZKNLYKWTgg4gQOaDYqJIIGl4LixhBwoy50LSIiulEjCkpAUBBRURpdGceFMQ7YtgkOJE4xTjGa9vuedUl1Vd2qevSrFqvrwJ97695zzj3/PXd6nd7MzMzIQpJFC4msXDvCbc94l+Euwy2bgW5JtyyhOTpdhnNT0rKGLsMtS2iOTpfh3JS0rOGQ+eLT6/VWMNYJ4NjUmN9T/xLs4WfqvPxO7TU9DkTdNmvBbeAskJ7kv/n+AjwKXiSW7yibFQk3BSIPZHdTl5xZzML238DDYFlTsQS/jZF1AGQ1mAZZkkXfe9FbGwJrqmz6lL4cEmOgjhyO0jq2gGVj0hhhAl9M1FeB3gDRn4Pu/5NwQnJ0ALKqrgKHDmgzkHpjGR4oioPKP1H96+Dn8GvpKyLqneV5Lp0XgnHggTMFJjlYPqAcpnyLsz/LHBLL0fRfCzwbvNN3gLeI5WXKaik7DbF2/20A28HPYF+CPZQfg9tj9vS5h18DRSdyrO0j9FeW+PQenwTe138AJ+d34OPFa215zDa0l15LOLgamM0DIBukbQ60JjhLl7RL+HWQtSv7jhLGz1FgM3DJZ30Yy69gYzqGonrVHr4eJ+OgB7Ji2xi4lGUW8+PsD0vOwNGNwInMirF42K0nlmXZzvR3LNARDN3fx6WVI3VJF50Fzvr7EZtY8zQdLtUiOYXGIrJpXUmvTDdk61HCKEqiagD9SSwnLCeX3RYwSJafRd/zoUj2FzVm2hyzMJ6gV0Y46Myl/BzjeqfnyMg36G5NJqpoTPvnLGWEnS0f9lVStL/7NgT/C5XNoHTW6XesV4En/1wlGo+Oo4QJ1ivoxxqju+fKCG2lf1uFH7P3eEl2K8xndRt3VKKEE4sPKWOHiCreg28TaPR1RN/X6GwEO0GReJ3cg95kUWeqzT8W6KtMpujcVaZQRfgFjL8qcbCDvndi/Zz0h4Hr6L8JHBHRW0L7DejdAU6K6Nj8CfBQi4mH4xYmrmy1sXlK/gCAAyfkQaAT91kWj9HW/6tJ8MO3NmeC+4CHlqdu1q7o25Xk5Hqynw+WBp+hpO1K4JItsnfr5GyCbSirCHstnQpcKulBXMK+o1frCPGgWAomwL2gLsm0z3S9ny38XARWgEXJOI7xNMiS9ns9MN5ZCQhEQ1lIGCOXmZf4ZeAW8C4IAblv3wBXAIn6sjkZ3Arc80FvGKW/nu4H/nhZDiR0IngI+LYPY3i43gWuAeNgFBQSn0UYJZejRH3CPQ8cMDi19Jp6AviuVfd48ADwRZXWG3Z9J/6fApeAJUm2TYRE02OZjPfA3WAM9HVDdvt2iXHI1HkoPQd2g7SjUHef+NyU7AXgFRD65qOcZrybQXgFmtUDIDu2xE3CBuCWWBxIU+8vk9MozdQukDUO3x4qm5IJOp36ZyW6waaJci/jrkviWEV9qiQOdd8Ebr/+T0fKkYvBp6AqOB2fnQz0SA39Kn9z6Z9mfPeze/UlUOXrB3Q2AW36a77KwP7tYCwh7Mupjk1TOmZuNInlyZqxuN8n3ItrQF1xryvRl9W/3Y3/60QGCTGF71h5JB0Tbn7vsDqyP6Vkva5dymxoVQ+lIE6+3+lJCH3Zcp+E78y2Fny7Evw7kstC8YA7BtQZRP1hiwTDKnuGun8aSiekaDxXwrbG/zOtaOT/ss3MLSjpCLc93V2Guwy3bAa6Jd2yhObodBnOTUnLGroMtyyhOTpdhnNT0rKGfwD3f6JVZi/xSQAAAABJRU5ErkJggg==');
 }
 
-/* line 69, ../sass/holiday-theme.scss */
+@font-face {
+  font-family: "CandyScript";
+  src: url('../fonts/CandyScript/candy_script-webfont.ttf') format('truetype'), url('../fonts/CandyScript/candy_script-webfont.eot') format('embedded-opentype'), url('../fonts/CandyScript/candy_script-webfont.svg') format('svg'), url('../fonts/CandyScript/candy_script-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Puritan";
+  src: url('../fonts/Puritan/puritan-webfont.ttf') format('truetype'), url('../fonts/Puritan/puritan-webfont.eot') format('embedded-opentype'), url('../fonts/Puritan/puritan-webfont.svg') format('svg'), url('../fonts/Puritan/puritan-webfont.woff') format('woff');
+}
+
+/* line 70, ../sass/holiday-theme.scss */
 .x-layout-card-item {
-  background: url("../images/background.png") top left repeat;
+  background: url('../images/background.png');
   background-size: cover;
 }
 
-/* line 75, ../sass/holiday-theme.scss */
+/* line 76, ../sass/holiday-theme.scss */
 .tweet-wrapper h2 {
   font-weight: bold;
   padding-bottom: 3px;
 }
-/* line 76, ../sass/holiday-theme.scss */
+/* line 77, ../sass/holiday-theme.scss */
 .tweet-wrapper img {
   border-radius: 5px;
   float: left;
 }
-/* line 77, ../sass/holiday-theme.scss */
+/* line 78, ../sass/holiday-theme.scss */
 .tweet-wrapper .tweet {
   font-size: 70%;
   margin-left: 60px;
   min-height: 50px;
 }
-/* line 82, ../sass/holiday-theme.scss */
+/* line 83, ../sass/holiday-theme.scss */
 .tweet-wrapper .posted {
   float: right;
 }
@@ -11329,52 +11331,91 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-mask-image: url('data:image/png;base64,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');
 }
 
+/* line 93, ../sass/holiday-theme.scss */
+.x-button {
+  margin: 10px;
+}
 /* line 95, ../sass/holiday-theme.scss */
 .x-button.x-button-action {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #f2f2f2), color-stop(100%, #607caa));
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #607caa));
+  background-image: -webkit-linear-gradient(#ffffff, #607caa);
+  background-image: linear-gradient(#ffffff, #607caa);
   border: 2px solid #607caa;
 }
 /* line 98, ../sass/holiday-theme.scss */
 .x-button.x-button-action .x-button-label, .x-button.x-button-action .x-hasbadge .x-badge, .x-hasbadge .x-button.x-button-action .x-badge {
-  color: #607caa;
+  color: #4b638c;
 }
-/* line 100, ../sass/holiday-theme.scss */
-.x-button.x-button-confirm {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #f2f2f2), color-stop(100%, #799d54));
-  border: 2px solid #799d54;
+/* line 99, ../sass/holiday-theme.scss */
+.x-button.x-button-action.x-button-pressing {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #607caa), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#607caa, #ffffff);
+  background-image: linear-gradient(#607caa, #ffffff);
 }
 /* line 103, ../sass/holiday-theme.scss */
-.x-button.x-button-confirm .x-button-label, .x-button.x-button-confirm .x-hasbadge .x-badge, .x-hasbadge .x-button.x-button-confirm .x-badge {
-  color: #799d54;
+.x-button.x-button-confirm {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #799d54));
+  background-image: -webkit-linear-gradient(#ffffff, #799d54);
+  background-image: linear-gradient(#ffffff, #799d54);
+  border: 2px solid #799d54;
 }
-/* line 105, ../sass/holiday-theme.scss */
+/* line 106, ../sass/holiday-theme.scss */
+.x-button.x-button-confirm .x-button-label, .x-button.x-button-confirm .x-hasbadge .x-badge, .x-hasbadge .x-button.x-button-confirm .x-badge {
+  color: #5f7c42;
+}
+/* line 107, ../sass/holiday-theme.scss */
+.x-button.x-button-confirm.x-button-pressing {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #799d54), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#799d54, #ffffff);
+  background-image: linear-gradient(#799d54, #ffffff);
+}
+/* line 111, ../sass/holiday-theme.scss */
 .x-button.x-button-decline {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #f2f2f2), color-stop(100%, #b0886d));
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #b0886d));
+  background-image: -webkit-linear-gradient(#ffffff, #b0886d);
+  background-image: linear-gradient(#ffffff, #b0886d);
   border: 2px solid #b0886d;
 }
-/* line 108, ../sass/holiday-theme.scss */
+/* line 114, ../sass/holiday-theme.scss */
 .x-button.x-button-decline .x-button-label, .x-button.x-button-decline .x-hasbadge .x-badge, .x-hasbadge .x-button.x-button-decline .x-badge {
-  color: #b0886d;
+  color: #986e52;
 }
-/* line 110, ../sass/holiday-theme.scss */
+/* line 115, ../sass/holiday-theme.scss */
+.x-button.x-button-decline.x-button-pressing {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b0886d), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#b0886d, #ffffff);
+  background-image: linear-gradient(#b0886d, #ffffff);
+}
+/* line 119, ../sass/holiday-theme.scss */
 .x-button .x-button-label, .x-button .x-hasbadge .x-badge, .x-hasbadge .x-button .x-badge {
-  color: #1073B9;
+  font-family: "CandyScript";
   text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0;
 }
 
-/* line 117, ../sass/holiday-theme.scss */
+/* line 126, ../sass/holiday-theme.scss */
 .x-toolbar-dark .x-button .x-button-icon.x-icon-mask, .x-toolbar .x-toolbar-dark .x-button .x-button-icon.x-icon-mask, .x-toolbar-dark .x-field-select .x-component-outer .x-button-icon.x-icon-mask, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer .x-button-icon.x-icon-mask, .x-toolbar-dark .x-field-select .x-component-outer::before .x-button-icon.x-icon-mask, .x-toolbar .x-toolbar-dark .x-field-select .x-component-outer::before .x-button-icon.x-icon-mask {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, #42567d), color-stop(100%, #42567d));
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42567d), color-stop(100%, #42567d));
+  background-image: -webkit-linear-gradient(#42567d, #42567d);
+  background-image: linear-gradient(#42567d, #42567d);
 }
 
-/* line 121, ../sass/holiday-theme.scss */
-.x-toolbar-dark.x-docked-top {
-  background-image: url("../images/snowflake.png") top left repeat-x !important;
+/* line 130, ../sass/holiday-theme.scss */
+.x-toolbar-dark {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8197bc), color-stop(100%, #4b638c));
+  background-image: -webkit-linear-gradient(#8197bc, #4b638c);
+  background-image: linear-gradient(#8197bc, #4b638c);
 }
 
-/* line 128, ../sass/holiday-theme.scss */
+/* line 135, ../sass/holiday-theme.scss */
+.x-toolbar.x-navigation-bar {
+  background: url('../images/snowflake.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #607caa));
+  background: url('../images/snowflake.png'), -webkit-linear-gradient(#ffffff, #607caa);
+  background: url('../images/snowflake.png'), linear-gradient(#ffffff, #607caa);
+}
+/* line 139, ../sass/holiday-theme.scss */
 .x-toolbar .x-innerhtml {
-  color: #42567D !important;
+  color: #4b638c;
+  font-family: "CandyScript";
   text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0;
   text-transform: capitalize;
 }
