@@ -27,8 +27,6 @@
     $tabs-bar-gradient: color-stops(lighten($active-color, 30%), $base-color);
     $tabs-bottom-inactive-gradient: color-stops(red, blue);
     
-    
-    
     // TOOLBARS
 	$toolbar-gradient: color-stops(lighten($active-color, 30%), $base-color);
 
@@ -132,7 +130,6 @@
 		
 	}
 
-
 	// BUTTONS
 	.x-button {
 		margin: 10px;
@@ -174,4 +171,3 @@
 			}
 		}
 	}
-	
