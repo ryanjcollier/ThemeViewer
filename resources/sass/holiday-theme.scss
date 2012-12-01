@@ -4,7 +4,7 @@
     $base-color: #8197BC;
     $confirm-color: #799D54;
     $alert-color: #B0886D;
-    $neutral-color: #e0e0e0;
+    $neutral-color: $base-color;
     $active-color: darken($base-color, 10%);
     
     // GRADIENTS
@@ -68,7 +68,7 @@
     											"Puritan/puritan-webfont.woff"));
     											
 // Application Specific (ThemeViewer.app) Overrides
-	.x-layout-card-item {
+	.x-layout-card-item, .x-form .x-scroll-container {
 		@include background(image-url('background.png'));
 	    background-size: cover;
 	}
@@ -107,6 +107,10 @@
 		}
 	}
 	
+	.x-toolbar .x-button .x-button-label {
+		color: white;
+	}
+	
 	// TABBARS
 	
 	.x-tabbar-dark {
@@ -129,19 +133,65 @@
 		}
 		
 	}
+	
+	.x-tabbar-neutral {
+		&.x-docked-top{
+			.x-button-label {
+				color: darken($active-color, 10%);
+				@include bevel-text('highlight');
+			}
+			.x-tab-active {
+				@include background-image(linear-gradient($active-color, lighten($active-color, 30%)));
+				.x-button-label {
+					color: lighten($base-color, 30%);
+					@include bevel-text('shadow');
+				}
+			}
+		}
+	}
+	
+	// FORMS
+	.x-toolbar .x-field-search .x-component-outer, .x-toolbar .x-field-select .x-component-outer, .x-toolbar .x-field-text .x-component-outer {
+		border: 1px solid darken($active-color, 10%);
+	}
+	
 
 	// BUTTONS
 	.x-button {
+		&.x-button-pressing {
+			@include background-image(linear-gradient($active-color, lighten($active-color, 30%))); 
+		}
 		margin: 10px;
-		&.x-button-action {
+		border: 2px solid darken($active-color, 10%);
+		@include background-image(linear-gradient(lighten($active-color, 30%), $active-color)); 
+		border: 2px solid darken($active-color, 10%);
+		.x-button-label {color: darken($active-color, 10%); }
+		
+		
+		&.x-button-normal, &.x-button-normal-round, &.x-button-normal-small {
 			@include background-image(linear-gradient(lighten($active-color, 30%), $active-color)); 
 			border: 2px solid darken($active-color, 10%);
+			.x-button-label {color: darken($active-color, 10%); }
+			&.x-button-pressed {
+				@include background-image(linear-gradient($active-color, lighten($active-color, 30%)));
+				.x-button-pressing {
+					@include background-image(linear-gradient($active-color, lighten($active-color, 30%))); 
+				}
+				.x-button-label {
+					color: lighten($base-color, 30%);
+					@include bevel-text('shadow');
+				}
+			}
+		}
+		&.x-button-action, &.x-button-action-round, &.x-button-action-small {
+			@include background-image(linear-gradient(lighten($active-color, 30%), $active-color)); 
+			border: 2px solid lighten($active-color, 10%);
 			.x-button-label {color: darken($active-color, 10%); }
 			&.x-button-pressing {
 				@include background-image(linear-gradient($active-color, lighten($active-color, 30%))); 
 			}
 		}
-		&.x-button-confirm {
+		&.x-button-confirm, &.x-button-confirm-round, &.x-button-confirm-small {
 			@include background-image(linear-gradient(lighten($confirm-color, 30%), $confirm-color)); 
 			border: 2px solid darken($confirm-color, 10%);
 			.x-button-label {color: darken($confirm-color, 10%); }
@@ -149,7 +199,7 @@
 				@include background-image(linear-gradient($confirm-color, lighten($confirm-color, 30%))); 
 			}
 		}
-		&.x-button-decline {
+		&.x-button-decline, &.x-button-decline-round, &.x-button-decline-small {
 			@include background-image(linear-gradient(lighten($alert-color, 30%), $alert-color)); 
 			border: 2px solid darken($alert-color, 10%);
 			.x-button-label {color: darken($alert-color, 10%); }
